@@ -24,7 +24,8 @@ export const env = createEnv({
     RETELL_API_KEY: z.string(),
     HUME_API_KEY: z.string(),
     HUME_CLIENT_SECRET: z.string(),
-    
+    SINDARIN_CLIENT_API_KEY: z.string(),
+    SINDARIN_PRIVATE_API_KEY: z.string(),
   },
 
   /**
@@ -52,6 +53,8 @@ export const env = createEnv({
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     HUME_CLIENT_SECRET: process.env.HUME_CLIENT_SECRET,
     HUME_API_KEY: process.env.HUME_API_KEY,
+    SINDARIN_CLIENT_API_KEY: process.env.SINDARIN_CLIENT_API_KEY,
+    SINDARIN_PRIVATE_API_KEY: process.env.SINDARIN_PRIVATE_API_KEY,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
